@@ -1,42 +1,23 @@
-# AI Ethics Debate Coach
+# AI Ethics Debate Coach｜AI伦理辩论助手
 
-**Generative AI literacy · Conversation design · Structured debate**
+基于 Odin AI 的对话工具，通过追问、反驳和反思，帮助学习者练习 AI 伦理与治理议题的论证。
 
-[Product case →](https://yifeng-lab.github.io/ai-ethics-debate-coach/) · [Try the coach →](https://yifeng-lab.github.io/ai-ethics-debate-coach/debate.html) · [Original demo →](https://jarosenblum.github.io/Odin/yi-1.html)
+### [▶ 在线体验](https://yifeng-lab.github.io/ai-ethics-debate-coach/debate.html)
 
-## Product goal
+**打开后，点击右下角蓝色聊天按钮即可开始。**
 
-Help learners practice reasoning about AI ethics and governance by defending a position, examining counterarguments and reflecting on how their thinking changes.
+<a href="https://yifeng-lab.github.io/ai-ethics-debate-coach/debate.html"><img src="chat-preview.jpg" alt="AI伦理辩论助手聊天界面，点击进入在线体验" width="360"></a>
 
-The coach uses a debate-first, Socratic approach. Its prompt design targets **four to five rounds**, ending with reflection rather than an indefinitely extended argument.
+*上图为界面预览，点击图片进入在线对话。*
 
-## My contribution
+## 我的工作
 
-- Defined the debate coach’s role, tasks, requirements and instructions using an RTRI structure.
-- Designed the conversation progression: initial claim → challenge → justification → ethical / policy trade-offs → reflection.
-- Selected knowledge-base materials on AI governance and generative AI literacy.
-- Iterated personality and interaction rules in response to early qualitative observations of rigid or confrontational replies.
-- Connected the tool with a learning-activity plan and a web embed.
+- **对话设计：**定义角色、任务和行为规则，设计“提出观点 → 追问与反驳 → 权衡 → 反思”的流程，以4–5轮为目标。
+- **知识与提示词：**选择 AI 治理与 AI 素养材料，调整提示词和语气，让追问保持挑战性与支持性。
+- **使用体验：**配套设计学习活动，并将 Odin 聊天工具嵌入网页。
 
-## Design materials
+## 项目资料
 
-| File | What it shows |
-| --- | --- |
-| [PROMPT.md](PROMPT.md) | Role, task, requirements and instructions supplied for the agent |
-| [DESIGN.md](DESIGN.md) | Problem framing, knowledge choices, iteration and product trade-offs |
-| [EVALUATION.md](EVALUATION.md) | Proposed checks; this is a plan, not completed benchmark results |
-| [Linked lesson plan](https://docs.google.com/document/d/1NeaM5EjIYPxuGoMmmTevyBwGYawtsf-4zVGdTja0Mg4/edit?usp=sharing) | Creator-provided teaching activity document |
+[产品案例](https://yifeng-lab.github.io/ai-ethics-debate-coach/) · [提示词](PROMPT.md) · [设计与迭代](DESIGN.md) · [评估计划](EVALUATION.md) · [活动教案](https://docs.google.com/document/d/1NeaM5EjIYPxuGoMmmTevyBwGYawtsf-4zVGdTja0Mg4/edit?usp=sharing)
 
-## Implementation & evidence
-
-The chatbot is hosted on **Odin AI**. This repository contains a static product-case page, an embed wrapper and design documentation; it does not implement a new model backend.
-
-The creator describes a RAG-based design using an AI Ethics Debate Bot knowledge document and Bozkurt’s generative AI literacy work. The knowledge documents, retrieval configuration and retrieval logs have not been supplied in this repository.
-
-“Fine tuning” in the source reflection is documented here as **prompt, personality and rule iteration**. No model-weight training evidence or quantitative user-impact results are supplied.
-
-## Run locally
-
-Open `index.html` for the product case and `debate.html` for the debate guide. Both pages load the creator-provided floating Odin chat widget (`frame_type="widget"`); use the bottom-right chat button. The live chat depends on Odin AI availability and project access. The external links remain available if embedding does not work.
-
-The original window embed was checked against `jarosenblum/Odin/yi-1.html`; the creator subsequently supplied the floating widget snippet used here. The lesson-plan link is preserved; its document body has not yet been inspected for this portfolio edition.
+**技术说明：**聊天服务由 Odin AI 提供，本仓库保存展示页面与设计文档；提示词调整不涉及模型权重训练，评估计划尚待执行。
