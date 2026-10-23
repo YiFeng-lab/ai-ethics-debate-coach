@@ -37,6 +37,6 @@ The creator describes a RAG-based design using an AI Ethics Debate Bot knowledge
 
 ## Run locally
 
-Open `index.html` for the product case and `debate.html` for the embed. The live chat depends on Odin AI availability and project access. The external links remain available if embedding does not work.
+Open `index.html` for the product case and `debate.html` for the debate guide. Both pages load the creator-provided floating Odin chat widget (`frame_type="widget"`); use the bottom-right chat button. The live chat depends on Odin AI availability and project access. The external links remain available if embedding does not work.
 
-The supplied embed was checked against the existing `jarosenblum/Odin/yi-1.html` source. The lesson-plan link is preserved; its document body has not yet been inspected for this portfolio edition.
+The original window embed was checked against `jarosenblum/Odin/yi-1.html`; the creator subsequently supplied the floating widget snippet used here. The lesson-plan link is preserved; its document body has not yet been inspected for this portfolio edition.
